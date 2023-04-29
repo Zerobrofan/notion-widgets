@@ -107,6 +107,11 @@
     .youtube::after {
       background-color: #FF0000;
     }
+    
+    .discord:hover,
+    .discord::after {
+      background-color: #5865F2;
+    }
 
     .pinterest:hover,
     .pinterest::after {
@@ -142,6 +147,12 @@
         <span class="icon"><i class="fab fa-github"></i></span>
       </div>
       <!-- End github Icon -->
+      
+      <!-- Start discord Icon -->
+      <div id="discord" onclick="navigate(this.id)" class="fill discord">
+        <span class="icon"><i class="fab fa-discord"></i></span>
+      </div>
+      <!-- End discord Icon -->
       
       <!-- Start email Icon
       <div id="email" onclick="navigate(this.id)" class="fill email">
@@ -215,6 +226,9 @@
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+        }
+        else if (id === "discord") {
+          window.open("https://discordapp.com/users/317374309293359105", '_blank').focus(); //Add the url to your telegram account
         }
       }
 
